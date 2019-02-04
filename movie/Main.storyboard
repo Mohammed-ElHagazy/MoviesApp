@@ -53,6 +53,9 @@
                                                         <constraint firstAttribute="width" constant="55" id="DaR-Bu-stY"/>
                                                     </constraints>
                                                     <state key="normal" title="Remove"/>
+                                                    <connections>
+                                                        <action selector="RemoveFromFavListWithSender:" destination="Ugw-kf-JZ5" eventType="touchDown" id="2LA-9t-jmC"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -86,7 +89,7 @@
                                 <rect key="frame" x="100" y="595" width="175" height="52"/>
                                 <state key="normal" title="Show Movies"/>
                                 <connections>
-                                    <segue destination="8cF-G9-EAE" kind="show" id="QDd-4G-2jL"/>
+                                    <segue destination="8cF-G9-EAE" kind="show" identifier="SearchMovieSegue" id="QDd-4G-2jL"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -15,22 +15,25 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
     @IBOutlet var SearchText: UITextField!
     @IBOutlet var tableview: UITableView!
     weak var delegate: ViewController!
-    var searchResult: [Movie] = []
+    var searchedMovies: [Movie] = []
     
     @IBAction func search(sender: UIButton){
-          print("Search...")
+        let csAllowedURL = CharacterSet(bitmapRepresentation: CharacterSet.urlPathAllowed.bitmapRepresentation)
         var searchTerm = SearchText.text!
+            searchTerm = searchTerm.addingPercentEncoding(withAllowedCharacters: csAllowedURL)!
+        print("Searching for \(searchTerm)")
         if searchTerm.characters.count > 2{
             retriveMovieByTerm(searchTerm: searchTerm)
         }
     }
     @IBAction func addFav(sender: UIButton) {
         print("Item \(sender.tag) are selected as a favorite")
-        self.delegate.favoritMovie.append(searchResult[sender.tag])
+        self.delegate.favoritMovie.append(searchedMovies[sender.tag])
     }
     
     func retriveMovieByTerm(searchTerm: String) {
-        let url = "https://www.omdbapi.com/?s=\(searchTerm)&type=movie&r=json&apikey=3c54185d"
+        var url = "https://www.omdbapi.com/?s=\(searchTerm)&type=movie&r=json&apikey=3c54185d"
+        searchedMovies.removeAll()
         Alamofire.request(url).responseData{(resData) -> Void in
             if(resData.result.value != nil){
             let swiftyJsonVar = JSON(resData.result.value!)
@@ -43,7 +46,7 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
                         let movItem = Movie(id: id,title: title, year: year, imageUrl: imageUrl)
                         print(movItem)
                         print(movItem.id)
-                        self.searchResult.append(movItem)
+                        self.searchedMovies.append(movItem)
                     }
                 self.tableview.reloadData()
         }
@@ -51,21 +54,21 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchResult.count
+        return searchedMovies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let movieCell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomTableViewCell
         let idx: Int = indexPath.row
         movieCell.favButton.tag = idx
-        movieCell.movieTitle?.text = searchResult[idx].title
-        movieCell.movieYear?.text = searchResult[idx].year
+        movieCell.movieTitle?.text = searchedMovies[idx].title
+        movieCell.movieYear?.text = searchedMovies[idx].year
         displayMovieImage(idx, movieCell: movieCell)
         return movieCell
     }
     
     func displayMovieImage(_ row:Int, movieCell: CustomTableViewCell) {
-        let url:String = (URL(string: searchResult[row].imageUrl)?.absoluteString)!
+        let url:String = (URL(string: searchedMovies[row].imageUrl)?.absoluteString)!
         URLSession.shared.dataTask(with: URL(string: url)!) { (data, response, error)-> Void in
             if error != nil{
                 print(error!)

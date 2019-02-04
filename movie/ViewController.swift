@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     var favoritMovie: [Movie] = []
     
-    @IBAction func RemoveFromFavList(sender: UIButton){
+    @IBAction func RemoveFromFavList(sender: UIButton) {
         favoritMovie.remove(at: sender.tag)
         mainTableView.reloadData()
     }
