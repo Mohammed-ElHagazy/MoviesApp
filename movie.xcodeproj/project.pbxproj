@@ -16,6 +16,8 @@
 		523D37E821B30D9900DAD487 /* movieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D37E721B30D9900DAD487 /* movieUITests.swift */; };
 		523D37F621B30F1400DAD487 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D37F521B30F1400DAD487 /* CustomTableViewCell.swift */; };
 		523D37F821B3102B00DAD487 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D37F721B3102B00DAD487 /* Movie.swift */; };
+		526AE56322086E51005C0F2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526AE56222086E51005C0F2E /* GoogleService-Info.plist */; };
+		526AE56522086F1B005C0F2E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AE56422086F1B005C0F2E /* LoginViewController.swift */; };
 		52CDFDE9220197300071257E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CDFDE8220197300071257E /* Main.storyboard */; };
 		52FD010021B439CA00670C1A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD00FF21B439CA00670C1A /* SearchViewController.swift */; };
 		717FDE0825A8B3B740D32CE6 /* Pods_movieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C807E4FF5BF8A17B757C651 /* Pods_movieTests.framework */; };
@@ -58,6 +60,8 @@
 		5240E53E21F71D5400348E82 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5240E54021F71D5900348E82 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5240E54221F71D5C00348E82 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		526AE56222086E51005C0F2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		526AE56422086F1B005C0F2E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		52CDFDE8220197300071257E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		52FD00FF21B439CA00670C1A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5BA1AC3D0ADED86A8498F6E6 /* Pods-movieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movieUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movieUITests/Pods-movieUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 		523D37C621B30D9800DAD487 /* movie */ = {
 			isa = PBXGroup;
 			children = (
+				526AE56222086E51005C0F2E /* GoogleService-Info.plist */,
 				523D37C721B30D9800DAD487 /* AppDelegate.swift */,
 				523D37C921B30D9800DAD487 /* ViewController.swift */,
 				523D37CE21B30D9900DAD487 /* Assets.xcassets */,
@@ -145,6 +150,7 @@
 				523D37F521B30F1400DAD487 /* CustomTableViewCell.swift */,
 				523D37F721B3102B00DAD487 /* Movie.swift */,
 				52FD00FF21B439CA00670C1A /* SearchViewController.swift */,
+				526AE56422086F1B005C0F2E /* LoginViewController.swift */,
 			);
 			path = movie;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CDFDE9220197300071257E /* Main.storyboard in Resources */,
+				526AE56322086E51005C0F2E /* GoogleService-Info.plist in Resources */,
 				523D37D221B30D9900DAD487 /* LaunchScreen.storyboard in Resources */,
 				523D37CF21B30D9900DAD487 /* Assets.xcassets in Resources */,
 			);
@@ -321,16 +328,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-movie/Pods-movie-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -410,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526AE56522086F1B005C0F2E /* LoginViewController.swift in Sources */,
 				52FD010021B439CA00670C1A /* SearchViewController.swift in Sources */,
 				523D37F621B30F1400DAD487 /* CustomTableViewCell.swift in Sources */,
 				523D37CA21B30D9800DAD487 /* ViewController.swift in Sources */,

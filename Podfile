@@ -5,6 +5,8 @@ target 'movie' do
     pod 'IQKeyboardManagerSwift'
     pod 'Alamofire'
     pod 'SwiftyJSON'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
   use_frameworks!
 
   # Pods for movie
