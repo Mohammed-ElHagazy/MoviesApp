@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03DF278BBA16F2BBC7F93681 /* Pods_movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2AD605BE3709867BF5AAB3 /* Pods_movie.framework */; };
+		5222224522096ED500859E8A /* Banner1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5222224422096ED500859E8A /* Banner1.jpg */; };
 		523D37C821B30D9800DAD487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D37C721B30D9800DAD487 /* AppDelegate.swift */; };
 		523D37CA21B30D9800DAD487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D37C921B30D9800DAD487 /* ViewController.swift */; };
 		523D37CF21B30D9900DAD487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523D37CE21B30D9900DAD487 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		2F2AD605BE3709867BF5AAB3 /* Pods_movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5222224422096ED500859E8A /* Banner1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Banner1.jpg; sourceTree = "<group>"; };
 		523D37C421B30D9800DAD487 /* movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		523D37C721B30D9800DAD487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		523D37C921B30D9800DAD487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5222224322096E9000859E8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5222224422096ED500859E8A /* Banner1.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		523D37BB21B30D9800DAD487 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		523D37C621B30D9800DAD487 /* movie */ = {
 			isa = PBXGroup;
 			children = (
+				5222224322096E9000859E8A /* Resources */,
 				526AE56222086E51005C0F2E /* GoogleService-Info.plist */,
 				523D37C721B30D9800DAD487 /* AppDelegate.swift */,
 				523D37C921B30D9800DAD487 /* ViewController.swift */,
@@ -297,6 +308,7 @@
 				52CDFDE9220197300071257E /* Main.storyboard in Resources */,
 				526AE56322086E51005C0F2E /* GoogleService-Info.plist in Resources */,
 				523D37D221B30D9900DAD487 /* LaunchScreen.storyboard in Resources */,
+				5222224522096ED500859E8A /* Banner1.jpg in Resources */,
 				523D37CF21B30D9900DAD487 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

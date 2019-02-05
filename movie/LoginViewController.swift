@@ -17,9 +17,9 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if let _ = Auth.auth().currentUser {
-            self.signIn()
-        }
+//        if let _ = Auth.auth().currentUser {
+//            self.signIn()
+//        }
     }
     
     @IBAction func didTapSignIn(_ sender: UIButton) {
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
                 assertionFailure("user and error are nil")
                 return
             }
-            
+            print("Sing in tapped :/")
             self.signIn()
         })
     }
@@ -89,6 +89,7 @@ class LoginViewController: UIViewController {
     }
     
     func signIn() {
+        print("sign in done!")
         performSegue(withIdentifier: "SignInFromLogin", sender: nil)
     }
  
