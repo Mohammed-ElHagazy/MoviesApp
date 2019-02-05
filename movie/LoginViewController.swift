@@ -89,7 +89,6 @@ class LoginViewController: UIViewController {
     }
     
     func signIn() {
-        print("sign in done!")
         performSegue(withIdentifier: "SignInFromLogin", sender: nil)
     }
  

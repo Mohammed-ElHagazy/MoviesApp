@@ -17,6 +17,8 @@
 		523D37E821B30D9900DAD487 /* movieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D37E721B30D9900DAD487 /* movieUITests.swift */; };
 		523D37F621B30F1400DAD487 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D37F521B30F1400DAD487 /* CustomTableViewCell.swift */; };
 		523D37F821B3102B00DAD487 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D37F721B3102B00DAD487 /* Movie.swift */; };
+		52656F282209C1CB00791542 /* NatureLandscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52656F272209C1CB00791542 /* NatureLandscape.jpg */; };
+		52656F2A2209C3F300791542 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656F292209C3F300791542 /* RegisterViewController.swift */; };
 		526AE56322086E51005C0F2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526AE56222086E51005C0F2E /* GoogleService-Info.plist */; };
 		526AE56522086F1B005C0F2E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AE56422086F1B005C0F2E /* LoginViewController.swift */; };
 		52CDFDE9220197300071257E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CDFDE8220197300071257E /* Main.storyboard */; };
@@ -62,6 +64,8 @@
 		5240E53E21F71D5400348E82 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5240E54021F71D5900348E82 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5240E54221F71D5C00348E82 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52656F272209C1CB00791542 /* NatureLandscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatureLandscape.jpg; sourceTree = "<group>"; };
+		52656F292209C3F300791542 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = movie/RegisterViewController.swift; sourceTree = SOURCE_ROOT; };
 		526AE56222086E51005C0F2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		526AE56422086F1B005C0F2E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		52CDFDE8220197300071257E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 		5222224322096E9000859E8A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				52656F272209C1CB00791542 /* NatureLandscape.jpg */,
 				5222224422096ED500859E8A /* Banner1.jpg */,
 			);
 			path = Resources;
@@ -162,6 +167,7 @@
 				523D37F721B3102B00DAD487 /* Movie.swift */,
 				52FD00FF21B439CA00670C1A /* SearchViewController.swift */,
 				526AE56422086F1B005C0F2E /* LoginViewController.swift */,
+				52656F292209C3F300791542 /* RegisterViewController.swift */,
 			);
 			path = movie;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 				526AE56322086E51005C0F2E /* GoogleService-Info.plist in Resources */,
 				523D37D221B30D9900DAD487 /* LaunchScreen.storyboard in Resources */,
 				5222224522096ED500859E8A /* Banner1.jpg in Resources */,
+				52656F282209C1CB00791542 /* NatureLandscape.jpg in Resources */,
 				523D37CF21B30D9900DAD487 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +444,7 @@
 			files = (
 				526AE56522086F1B005C0F2E /* LoginViewController.swift in Sources */,
 				52FD010021B439CA00670C1A /* SearchViewController.swift in Sources */,
+				52656F2A2209C3F300791542 /* RegisterViewController.swift in Sources */,
 				523D37F621B30F1400DAD487 /* CustomTableViewCell.swift in Sources */,
 				523D37CA21B30D9800DAD487 /* ViewController.swift in Sources */,
 				523D37F821B3102B00DAD487 /* Movie.swift in Sources */,
