@@ -315,8 +315,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxu-zY-kda">
-                                <rect key="frame" x="312" y="69" width="48" height="40"/>
-                                <state key="normal" title="Logout"/>
+                                <rect key="frame" x="305" y="69" width="55" height="40"/>
+                                <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="logOutActionWithSender:" destination="Ugw-kf-JZ5" eventType="touchDown" id="0Cr-jr-y49"/>
                                 </connections>
@@ -436,6 +436,16 @@
                                     <action selector="searchWithSender:" destination="8cF-G9-EAE" eventType="touchDown" id="1ib-hv-jsL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB4-JP-fHJ">
+                                <rect key="frame" x="289" y="69" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0qx-qv-mfU"/>
+                                </constraints>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logOutActionWithSender:" destination="8cF-G9-EAE" eventType="touchDown" id="pwi-vj-xKC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -447,7 +457,9 @@
                             <constraint firstItem="HwG-qY-hng" firstAttribute="leading" secondItem="SBc-Ka-Std" secondAttribute="leading" constant="8" id="N8J-xM-3By"/>
                             <constraint firstItem="SBc-Ka-Std" firstAttribute="bottom" secondItem="HwG-qY-hng" secondAttribute="bottom" constant="20" id="hnK-1N-4f7"/>
                             <constraint firstItem="S0h-I1-J6Q" firstAttribute="top" secondItem="z1x-aV-ulh" secondAttribute="topMargin" constant="50" id="iuI-a3-AuN"/>
+                            <constraint firstItem="SBc-Ka-Std" firstAttribute="trailing" secondItem="lB4-JP-fHJ" secondAttribute="trailing" constant="26" id="qZQ-IJ-CBf"/>
                             <constraint firstItem="x8F-nr-Wi3" firstAttribute="top" secondItem="SBc-Ka-Std" secondAttribute="top" constant="50" id="qde-x8-LyZ"/>
+                            <constraint firstItem="lB4-JP-fHJ" firstAttribute="top" secondItem="SBc-Ka-Std" secondAttribute="top" constant="5" id="uvT-pg-pwA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SBc-Ka-Std"/>
                     </view>

@@ -17,9 +17,9 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        if let _ = Auth.auth().currentUser {
-//            self.signIn()
-//        }
+        if let _ = Auth.auth().currentUser {
+            self.signIn()
+        }
     }
     
     @IBAction func didTapSignIn(_ sender: UIButton) {
