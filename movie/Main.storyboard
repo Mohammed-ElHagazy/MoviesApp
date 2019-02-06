@@ -75,7 +75,10 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81y-HR-Nru">
                                 <rect key="frame" x="120" y="617" width="135" height="30"/>
-                                <state key="normal" title="Login"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="YFE-TN-xcM" kind="show" id="LEE-If-FvH"/>
                                 </connections>
@@ -178,7 +181,10 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD7-bC-LTd">
                                 <rect key="frame" x="97.5" y="557" width="92" height="30"/>
-                                <state key="normal" title="Register Now"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Register Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="y4z-4v-0K6" kind="show" id="R4D-75-J0Y"/>
                                 </connections>
@@ -496,6 +502,6 @@
         <image name="NatureLandscape.jpg" width="1536" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Srh-7l-pZN"/>
+        <segue reference="o2V-yz-Ota"/>
     </inferredMetricsTieBreakers>
 </document>
